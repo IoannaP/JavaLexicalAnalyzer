@@ -33,7 +33,7 @@ public class Lexer {
 
   public Lexer(Path filePath) throws IOException {
     this.sourceFile = Files.readAllBytes(filePath);
-    automaton = new Automaton(Paths.get("/home/ioana/automat-lexer-java.txt"));
+    automaton = new Automaton(Paths.get("automat-lexer-java.txt"));
     tokenList = new ArrayList<>();
   }
 

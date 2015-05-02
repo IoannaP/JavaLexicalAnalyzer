@@ -7,9 +7,9 @@ import java.nio.file.Paths;
 
 public class Main {
   public static void main(String args[]) throws IOException {
-    Lexer lexer = new Lexer(Paths.get("/home/ioana/f.txt"));
+    Lexer lexer = new Lexer(Paths.get("f.txt"));
     Token token;
-    File file = new File("/home/ioana/tokens.txt");
+    File file = new File("tokens.txt");
 
     if (!file.exists()) {
       file.createNewFile();
